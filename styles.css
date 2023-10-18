@@ -18,6 +18,11 @@ header{
     justify-content: space-around;
     background-color: #1f2937;
     padding: 8px;
+    position: fixed;
+    width: 100%;
+    z-index: 9;
+    
+
 }
 
 
@@ -40,13 +45,19 @@ ul{
 
 .about-me{
     
-    background-color: #1f2937;
+    background-color: rgba(0,0,0,0.5);
+    
     margin-top: none;
-    padding: 48px;
+    padding: 80px;
     display: flex;
     justify-content: space-evenly;
-    align-items: center;
+    align-items:center;
     flex: 1;
+    max-width: 75vw;
+    max-height: 75vh;
+    box-shadow: 0 0 2em rgb(69, 69, 69);;
+    
+
     
 }
 
@@ -83,7 +94,16 @@ ul{
 
 
 .banner-container{
-    background-color: #1f2937;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(./img/heroimg.jpg) no-repeat center;
+    background-size: cover;
+    height: 100vh;
+    
+    
+   
+    
 }
 
 .projects-container{
@@ -91,8 +111,9 @@ ul{
     justify-content: center;
     flex-direction: row;
     flex-wrap: wrap;
-    padding: 36px;
     gap: 80px;
+    min-height: 100%;
+    padding: 80px;
 }
 
 .project-container{
@@ -100,14 +121,23 @@ ul{
     max-width: 200px;
     
 }
+
+.media-container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
 .projects-section{
     display: flex;
     flex-direction: column;
     
 }
 .quote-section{
-    border: 1px solid green;
+    
     background-color: #e5e7eb;
+    min-height: 100%;
+    padding: 80px;
+    
 }
 
 .project-title{
@@ -142,4 +172,15 @@ ul{
     border-style: none ;
     padding: 8px;
     width: 100px;
+}
+
+.ig-logo, .twitch-logo{
+    width: 50px;
+    height: 50px;
+}
+
+.logos{
+    display: flex;
+    justify-content: center;
+    gap: 56px;
 }
